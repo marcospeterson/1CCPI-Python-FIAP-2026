@@ -5,9 +5,11 @@ nota4 = float(input("Digite sua quarta nota parcial: "))
 
 media = nota1 + nota2 + nota3 + nota4
 
-if media >= 7 :
+if media <0 or media >10:
+    print(f"Digite números válidos")
+elif 5 <= media <= 10:
     print(f"Aprovado")
 elif media >=5  <7:
-    print(f"Recuperação")
+    print(f"recuperação")
 else:
-    print(f"reprovado")
+    print(f"Reprovado")
